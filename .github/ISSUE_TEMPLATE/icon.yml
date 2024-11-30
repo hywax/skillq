@@ -1,6 +1,6 @@
 name: ✨ Suggestion an icon
 description: Suggest an icon that will improve SkillQ
-labels: ['suggestion icon', 'pending']
+labels: [suggestion icon, pending]
 body:
   - type: input
     id: skill-name
