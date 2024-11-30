@@ -1,0 +1,19 @@
+name: ✨ Suggestion an icon
+description: Suggest an icon that will improve SkillQ
+labels: [suggestion icon, pending]
+body:
+  - type: input
+    id: skill-name
+    attributes:
+      label: Skill Name
+      description: Please enter the name of the skill
+      placeholder: Figma
+    validations:
+      required: true
+  - type: textarea
+    id: reference-image
+    attributes:
+      label: Reference Image
+      description: Do you have any images of what the logo looks like? SVG preferred.
+    validations:
+      required: false
