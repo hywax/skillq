@@ -1,0 +1,48 @@
+{
+  "name": "skillq",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@9.14.2",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "release": "pnpm run lint && pnpm run typecheck && pnpm run build && changelogen --release --push",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "typecheck": "nuxt typecheck",
+    "clean": "rm -rf dist",
+    "clean:modules": "rm -rf .nuxt node_modules",
+    "postinstall": "nuxt prepare",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@nuxt/ui": "^3.0.0-alpha.9",
+    "@nuxtjs/i18n": "9.0.0-rc.2",
+    "@vueuse/nuxt": "12.0.0",
+    "nuxt": "^3.14.1592",
+    "nuxt-zod-i18n": "1.11.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.6.0",
+    "@commitlint/config-conventional": "^19.6.0",
+    "@hywax/tools-eslint": "^1.0.0",
+    "@types/node": "^22.10.1",
+    "changelogen": "^0.5.7",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.10",
+    "typescript": "^5.7.2",
+    "vue-tsc": "^2.1.10"
+  },
+  "lint-staged": {
+    "*.ts": "pnpm run lint"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
+}
