@@ -4,6 +4,7 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@vueuse/nuxt',
     '@nuxt/ui',
+    '@nuxt/ui-pro',
   ],
   runtimeConfig: {
     nitro: {
@@ -12,8 +13,9 @@ export default defineNuxtConfig({
   },
   i18n: {
     langDir: 'locales',
-    strategy: 'no_prefix',
+    strategy: 'prefix_except_default',
     defaultLocale: 'en',
+    vueI18n: 'vue-i18n.options.ts',
     experimental: {
       autoImportTranslationFunctions: true,
     },
@@ -24,6 +26,8 @@ export default defineNuxtConfig({
     locales: [
       { code: 'en', language: 'en-US', name: 'English', file: 'en-US.json' },
       { code: 'ru', language: 'ru-RU', name: 'Русский', file: 'ru-RU.json' },
+      // { code: 'zh', language: 'zh-CN', name: '中文', file: 'zh-CN.json' },
+      // { code: 'hi', language: 'hi-IN', name: 'हिंदी', file: 'hi-IN.json' },
     ],
   },
   zodI18n: {
@@ -50,7 +54,11 @@ export default defineNuxtConfig({
     classSuffix: '',
   },
   icon: {
+    customCollections: [
+      { prefix: 'skillq', dir: './app/assets/icons' },
+    ],
     clientBundle: {
+      includeCustomCollections: true,
       scan: {
         globInclude: ['app/**/*.{vue,ts}'],
         globExclude: ['node_modules', 'dist', 'build', 'coverage', 'test', 'tests', '.*'],
@@ -60,5 +68,5 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   compatibilityDate: '2024-11-01',
   future: { compatibilityVersion: 4 },
-  devtools: { enabled: true },
+  devtools: { enabled: false },
 })

@@ -1,6 +1,4 @@
-import type { I18nOptions } from 'vue-i18n'
-
-export default <I18nOptions>{
+export default defineI18nConfig(() => ({
   legacy: false,
   fallbackLocale: 'en',
   pluralRules: {
@@ -23,4 +21,4 @@ export default <I18nOptions>{
       return choicesLength < 4 ? 2 : 3
     },
   },
-}
+}))

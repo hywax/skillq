@@ -11,6 +11,9 @@ importers:
       '@nuxt/ui':
         specifier: ^3.0.0-alpha.9
         version: 3.0.0-alpha.9(@babel/core@7.26.0)(@babel/parser@7.26.2)(change-case@5.4.4)(embla-carousel@8.5.1)(ioredis@5.4.1)(magicast@0.3.5)(postcss@8.4.49)(rollup@4.28.0)(svelte@5.2.12)(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.1)(lightningcss@1.28.2)(terser@5.36.0))(vue@3.5.13(typescript@5.7.2))
+      '@nuxt/ui-pro':
+        specifier: ^3.0.0-alpha.9
+        version: 3.0.0-alpha.9(@babel/core@7.26.0)(@babel/parser@7.26.2)(change-case@5.4.4)(embla-carousel@8.5.1)(ioredis@5.4.1)(magicast@0.3.5)(postcss@8.4.49)(rollup@4.28.0)(svelte@5.2.12)(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.1)(lightningcss@1.28.2)(terser@5.36.0))(vue@3.5.13(typescript@5.7.2))
       '@nuxtjs/i18n':
         specifier: 9.0.0-rc.2
         version: 9.0.0-rc.2(@vue/compiler-dom@3.5.13)(eslint@9.16.0(jiti@2.4.1))(magicast@0.3.5)(rollup@4.28.0)(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2))
@@ -932,6 +935,11 @@ packages:
     resolution: {integrity: sha512-h4YJ1d32cU7tDKjjhjtIIEck4WF/w3DTQBT348E9Pz85YLttnLqktLM0Ez9Xc2LzCeUgBDQv1el7Ob/zT3KUqg==}
     hasBin: true
 
+  '@nuxt/ui-pro@3.0.0-alpha.9':
+    resolution: {integrity: sha512-mtSAX90Py0xqATg96NA5TilibuQGCcEz0FADWYy4VHzgKBzI0075br8FmifJP7IUvJPQtE7be479W304gFqlTA==}
+    peerDependencies:
+      typescript: ^5.6.3
+
   '@nuxt/ui@3.0.0-alpha.9':
     resolution: {integrity: sha512-HV9c9w0Ke78a+XmKwxfRdBn7GxecW4yaiwc/cVHvSesDFfJe//waZZQbBwJg25RTMqrMCU63XJiFaGM6I+3A9w==}
     hasBin: true
@@ -1373,6 +1381,9 @@ packages:
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
+
+  '@types/parse-path@7.0.3':
+    resolution: {integrity: sha512-LriObC2+KYZD3FzCrgWGv/qufdUy4eXrxcLgQMfYXgPbLIecKIsVBaQgUPmxSSLcjmYbDTQbMgr6qr6l/eb7Bg==}
 
   '@types/resolve@1.20.2':
     resolution: {integrity: sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==}
@@ -2839,8 +2850,14 @@ packages:
   git-up@7.0.0:
     resolution: {integrity: sha512-ONdIrbBCFusq1Oy0sC71F5azx8bVkvtZtMJAsv+a6lz5YAmbNnLD6HAB4gptHZVLPR8S2/kVN6Gab7lryq5+lQ==}
 
+  git-up@8.0.0:
+    resolution: {integrity: sha512-uBI8Zdt1OZlrYfGcSVroLJKgyNNXlgusYFzHk614lTasz35yg2PVpL1RMy0LOO2dcvF9msYW3pRfUSmafZNrjg==}
+
   git-url-parse@15.0.0:
     resolution: {integrity: sha512-5reeBufLi+i4QD3ZFftcJs9jC26aULFLBU23FeKM/b1rI0K6ofIeAblmDVO7Ht22zTDE9+CkJ3ZVb0CgJmz3UQ==}
+
+  git-url-parse@16.0.0:
+    resolution: {integrity: sha512-Y8iAF0AmCaqXc6a5GYgPQW9ESbncNLOL+CeQAJRhmWUOmnPkKpBYeWYp4mFd3LA5j53CdGDdslzX12yEBVHQQg==}
 
   glob-parent@5.1.2:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
@@ -3853,6 +3870,10 @@ packages:
 
   parse-url@8.1.0:
     resolution: {integrity: sha512-xDvOoLU5XRrcOZvnI6b8zA6n9O9ejNk/GExuz1yBuWUGn9KA97GI6HTs6u02wKara1CeVmZhH+0TZFdWScR89w==}
+
+  parse-url@9.2.0:
+    resolution: {integrity: sha512-bCgsFI+GeGWPAvAiUv63ZorMeif3/U0zaXABGJbOWt5OH2KCaPHF6S+0ok4aqM9RuIPGyZdx9tR9l13PsW4AYQ==}
+    engines: {node: '>=14.13.0'}
 
   parseurl@1.3.3:
     resolution: {integrity: sha512-CiyeOxFT/JZyN5m0z9PfXw4SCBJ6Sygz1Dpl0wqjlhDEGGBP1GnsUVEL0p63hoG1fcj3fHynXi9NYO4nWOL+qQ==}
@@ -6207,6 +6228,64 @@ snapshots:
       - rollup
       - supports-color
 
+  '@nuxt/ui-pro@3.0.0-alpha.9(@babel/core@7.26.0)(@babel/parser@7.26.2)(change-case@5.4.4)(embla-carousel@8.5.1)(ioredis@5.4.1)(magicast@0.3.5)(postcss@8.4.49)(rollup@4.28.0)(svelte@5.2.12)(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.1)(lightningcss@1.28.2)(terser@5.36.0))(vue@3.5.13(typescript@5.7.2))':
+    dependencies:
+      '@nuxt/kit': 3.14.1592(magicast@0.3.5)(rollup@4.28.0)
+      '@nuxt/schema': 3.14.1592(magicast@0.3.5)(rollup@4.28.0)
+      '@nuxt/ui': 3.0.0-alpha.9(@babel/core@7.26.0)(@babel/parser@7.26.2)(change-case@5.4.4)(embla-carousel@8.5.1)(ioredis@5.4.1)(magicast@0.3.5)(postcss@8.4.49)(rollup@4.28.0)(svelte@5.2.12)(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.1)(lightningcss@1.28.2)(terser@5.36.0))(vue@3.5.13(typescript@5.7.2))
+      '@vueuse/core': 11.3.0(vue@3.5.13(typescript@5.7.2))
+      consola: 3.2.3
+      defu: 6.1.4
+      git-url-parse: 16.0.0
+      ofetch: 1.4.1
+      parse-git-config: 3.0.0
+      pkg-types: 1.2.1
+      scule: 1.3.0
+      typescript: 5.7.2
+    transitivePeerDependencies:
+      - '@azure/app-configuration'
+      - '@azure/cosmos'
+      - '@azure/data-tables'
+      - '@azure/identity'
+      - '@azure/keyvault-secrets'
+      - '@azure/storage-blob'
+      - '@babel/core'
+      - '@babel/parser'
+      - '@capacitor/preferences'
+      - '@netlify/blobs'
+      - '@planetscale/database'
+      - '@upstash/redis'
+      - '@vercel/kv'
+      - '@vue/composition-api'
+      - async-validator
+      - axios
+      - change-case
+      - coffeescript
+      - drauu
+      - embla-carousel
+      - encoding
+      - focus-trap
+      - idb-keyval
+      - ioredis
+      - jwt-decode
+      - less
+      - magicast
+      - nprogress
+      - postcss
+      - postcss-load-config
+      - pug
+      - qrcode
+      - rollup
+      - sass
+      - sortablejs
+      - stylus
+      - sugarss
+      - supports-color
+      - svelte
+      - universal-cookie
+      - vite
+      - vue
+
   '@nuxt/ui@3.0.0-alpha.9(@babel/core@7.26.0)(@babel/parser@7.26.2)(change-case@5.4.4)(embla-carousel@8.5.1)(ioredis@5.4.1)(magicast@0.3.5)(postcss@8.4.49)(rollup@4.28.0)(svelte@5.2.12)(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.1)(lightningcss@1.28.2)(terser@5.36.0))(vue@3.5.13(typescript@5.7.2))':
     dependencies:
       '@iconify/vue': 4.1.2(vue@3.5.13(typescript@5.7.2))
@@ -6765,6 +6844,8 @@ snapshots:
       undici-types: 6.20.0
 
   '@types/normalize-package-data@2.4.4': {}
+
+  '@types/parse-path@7.0.3': {}
 
   '@types/resolve@1.20.2': {}
 
@@ -8458,9 +8539,18 @@ snapshots:
       is-ssh: 1.4.0
       parse-url: 8.1.0
 
+  git-up@8.0.0:
+    dependencies:
+      is-ssh: 1.4.0
+      parse-url: 9.2.0
+
   git-url-parse@15.0.0:
     dependencies:
       git-up: 7.0.0
+
+  git-url-parse@16.0.0:
+    dependencies:
+      git-up: 8.0.0
 
   glob-parent@5.1.2:
     dependencies:
@@ -9784,6 +9874,11 @@ snapshots:
 
   parse-url@8.1.0:
     dependencies:
+      parse-path: 7.0.0
+
+  parse-url@9.2.0:
+    dependencies:
+      '@types/parse-path': 7.0.3
       parse-path: 7.0.0
 
   parseurl@1.3.3: {}
