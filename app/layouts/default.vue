@@ -1,7 +1,7 @@
 <template>
   <AppHeader />
 
-  <UMain class="min-h-[calc(100vh-var(--ui-header-height)-var(--ui-footer-height))]">
+  <UMain class="min-h-[var(--ui-main-height)]">
     <slot />
   </UMain>
 
