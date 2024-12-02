@@ -1,8 +1,8 @@
 <template>
-  <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+  <div v-if="data && data.stars" class="flex flex-col md:flex-row justify-center items-center gap-6">
     <UAvatarGroup size="md">
       <UAvatar
-        v-for="(user, key) in users"
+        v-for="(user, key) in data.users"
         :key="key"
         :alt="user.name"
         :src="user.avatar"
@@ -15,7 +15,7 @@
       <div class="text-sm text-gray-500 dark:text-gray-400 leading-6">
         <i18n-t keypath="app.activity.description" tag="span" scope="global">
           <template #star>
-            <span class="text-gray-900 dark:text-white">{{ $n(stars) }}</span>
+            <span class="text-gray-900 dark:text-white">{{ $n(data.stars) }}</span>
           </template>
         </i18n-t>
       </div>
@@ -24,23 +24,5 @@
 </template>
 
 <script setup lang="ts">
-const stars = 1000
-const users = [
-  {
-    name: 'Hywax',
-    avatar: 'https://avatars.githubusercontent.com/u/149865959?v=4',
-  },
-  {
-    name: 'Hywax',
-    avatar: 'https://avatars.githubusercontent.com/u/149865959?v=4',
-  },
-  {
-    name: 'Hywax',
-    avatar: 'https://avatars.githubusercontent.com/u/149865959?v=4',
-  },
-  {
-    name: 'Hywax',
-    avatar: 'https://avatars.githubusercontent.com/u/149865959?v=4',
-  },
-]
+const { data } = await useFetch('/api/activity')
 </script>

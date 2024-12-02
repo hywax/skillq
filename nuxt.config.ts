@@ -10,6 +10,11 @@ export default defineNuxtConfig({
     nitro: {
       envPrefix: 'APP_',
     },
+    public: {
+      githubOwner: 'hywax',
+      githubRepo: 'skillq',
+    },
+    githubToken: '',
   },
   i18n: {
     langDir: 'locales',
