@@ -70,6 +70,21 @@ importers:
         specifier: ^2.1.10
         version: 2.1.10(typescript@5.7.2)
 
+  cli:
+    dependencies:
+      citty:
+        specifier: ^0.1.6
+        version: 0.1.6
+      consola:
+        specifier: ^3.2.3
+        version: 3.2.3
+      globby:
+        specifier: ^14.0.2
+        version: 14.0.2
+      pathe:
+        specifier: ^1.1.2
+        version: 1.1.2
+
 packages:
 
   '@alloc/quick-lru@5.2.0':
