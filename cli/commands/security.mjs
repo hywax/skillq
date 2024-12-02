@@ -1,8 +1,7 @@
 import process from 'node:process'
 import { defineCommand } from 'citty'
 import { consola } from 'consola'
-import { basename } from 'pathe'
-import { getIconContent, getIconsList } from '../utils/icons.mjs'
+import { getIconsList } from '../utils/icons.mjs'
 
 export default defineCommand({
   meta: {
@@ -16,18 +15,15 @@ export default defineCommand({
       base64: [],
     }
 
-    consola.start(`Checking icons: ${icons.length}`)
+    consola.start(`Checking icons by ${icons.length} icons`)
 
     for (const icon of icons) {
-      const content = await getIconContent(icon)
-      const name = basename(icon)
-
-      if (content.includes('<script')) {
-        detected.xss.push(name)
+      if (icon.content.includes('<script')) {
+        detected.xss.push(icon.name)
       }
 
-      if (content.includes('base64')) {
-        detected.base64.push(name)
+      if (icon.content.includes('base64')) {
+        detected.base64.push(icon.name)
       }
     }
 
