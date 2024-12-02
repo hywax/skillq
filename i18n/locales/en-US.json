@@ -1,3 +1,49 @@
 {
-
+  "app": {
+    "footer": {
+      "copyright": "SkillQ by {author}",
+      "epistle": "From developer to other developers"
+    },
+    "link": {
+      "personal": "Personal Website",
+      "github": "Github Repository",
+      "sponsor": "Sponsor",
+      "tryNow": "Get started"
+    },
+    "language": {
+      "label": "Language"
+    },
+    "theme": {
+      "label": "Theme",
+      "light": "Switch to Light theme",
+      "dark": "Switch to Dark theme"
+    },
+    "activity": {
+      "label": "Github Repository",
+      "description": "Rated Best Over {star} Stars"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Highlight your expertise effortlessly on resumé",
+      "action": {
+        "tryNow": "Get started",
+        "star": "Star on Github"
+      }
+    }
+  },
+  "errors": {
+    "title": "Something's wrong",
+    "message": "Please, try to refresh the page",
+    "action": {
+      "home": "Go back home",
+      "refresh": "Refresh"
+    },
+    "status": {
+      "404": {
+        "title": "Page not found",
+        "message": "We are sorry, but the page you are looking for cannot be found on our site. The page may have been deleted or moved, or you may have entered an incorrect address"
+      }
+    }
+  }
 }

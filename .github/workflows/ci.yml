@@ -12,6 +12,9 @@ on:
     branches:
       - main
 
+env:
+  NUXT_UI_PRO_LICENSE: ${{ secrets.NUXT_UI_PRO_LICENSE }}
+
 jobs:
   check:
     runs-on: ubuntu-latest

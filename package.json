@@ -20,22 +20,31 @@
   },
   "dependencies": {
     "@nuxt/ui": "^3.0.0-alpha.9",
+    "@nuxt/ui-pro": "^3.0.0-alpha.9",
     "@nuxtjs/i18n": "9.0.0-rc.2",
     "@vueuse/nuxt": "12.0.0",
     "nuxt": "^3.14.1592",
     "nuxt-zod-i18n": "1.11.2",
+    "octokit": "^4.0.2",
     "zod": "^3.23.8"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.6.0",
     "@commitlint/config-conventional": "^19.6.0",
     "@hywax/tools-eslint": "^1.0.0",
+    "@iconify-json/lucide": "^1.2.17",
+    "@iconify-json/simple-icons": "^1.2.13",
     "@types/node": "^22.10.1",
     "changelogen": "^0.5.7",
     "husky": "^9.1.7",
     "lint-staged": "^15.2.10",
     "typescript": "^5.7.2",
     "vue-tsc": "^2.1.10"
+  },
+  "pnpm": {
+    "overrides": {
+      "unimport": "3.13.4"
+    }
   },
   "lint-staged": {
     "*.ts": "pnpm run lint"

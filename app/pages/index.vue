@@ -1,5 +1,3 @@
 <template>
-  <div>
-    <h1>Home</h1>
-  </div>
+  <HomeHero class="min-h-[inherit] flex flex-col justify-center items-center" />
 </template>
