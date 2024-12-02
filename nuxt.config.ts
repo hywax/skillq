@@ -70,6 +70,14 @@ export default defineNuxtConfig({
       },
     },
   },
+  nitro: {
+    storage: {
+      meta: {
+        driver: 'fs',
+        base: './meta',
+      },
+    },
+  },
   css: ['~/assets/css/main.css'],
   compatibilityDate: '2024-11-01',
   future: { compatibilityVersion: 4 },
