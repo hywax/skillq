@@ -12,6 +12,9 @@ on:
     branches:
       - main
 
+env:
+  NUXT_UI_PRO_LICENSE: ${{ secrets.NUXT_UI_PRO_LICENSE }}
+
 jobs:
   check:
     runs-on: ubuntu-latest
@@ -38,6 +41,3 @@ jobs:
 
       - name: Build
         run: pnpm run build
-        env:
-          NUXT_UI_PRO_LICENSE: ${{ secrets.NUXT_UI_PRO_LICENSE }}
-          APP_GITHUB_TOKEN: ${{ secrets.BOT_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
