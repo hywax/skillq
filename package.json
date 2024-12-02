@@ -4,6 +4,9 @@
   "version": "0.0.0",
   "private": true,
   "packageManager": "pnpm@9.14.2",
+  "bin": {
+    "skillq": "./cli/index.mjs"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
