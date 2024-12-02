@@ -21,5 +21,5 @@ import packageJson from '../../../package.json'
 
 const localePath = useLocalePath()
 const route = useRoute()
-const tryButton = computed(() => (route?.name as string).includes('index__'))
+const tryButton = computed(() => (route?.name as string || '').includes('index__'))
 </script>
