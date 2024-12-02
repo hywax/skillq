@@ -1,11 +1,24 @@
 import { readFile } from 'node:fs/promises'
 import { globby } from 'globby'
-import { resolve } from 'pathe'
+import { basename, resolve } from 'pathe'
 
+export const iconsMetaProdDir = resolve(import.meta.dirname, '../../.output/meta')
+export const iconsMetaDevDir = resolve(import.meta.dirname, '../../meta')
 export const iconsDir = resolve(import.meta.dirname, '../../icons')
 
-export function getIconsList() {
-  return globby(`${iconsDir}/*.svg`)
+export async function getIconsList() {
+  const list = await globby(`${iconsDir}/*.svg`)
+  const icons = []
+
+  for (const path of list) {
+    const file = basename(path)
+    const [name, variant = 'filled'] = file.replace('.svg', '').split('-')
+    const content = await getIconContent(path)
+
+    icons.push({ path, file, name, variant, content })
+  }
+
+  return icons
 }
 
 export function getIconContent(nameOrPath) {

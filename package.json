@@ -8,7 +8,7 @@
     "skillq": "./cli/index.mjs"
   },
   "scripts": {
-    "build": "nuxt build",
+    "build": "nuxt build && pnpm run cli:meta --prod",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
@@ -19,6 +19,7 @@
     "clean": "rm -rf dist",
     "clean:modules": "rm -rf .nuxt node_modules",
     "cli:security": "node cli/index.mjs security",
+    "cli:meta": "node cli/index.mjs meta",
     "postinstall": "nuxt prepare",
     "prepare": "husky"
   },
