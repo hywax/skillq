@@ -19,14 +19,6 @@
   --ui-bg-dots: radial-gradient(hsla(0, 0%, 20%, .3) 1px, transparent 0);
 }
 
-.font-display {
-  font-family: 'Recoleta', sans-serif;
-}
-
-.font-display2 {
-  font-family: 'Gabriela', sans-serif;
-}
-
 .metal-shadow {
   box-shadow: var(--ui-shadow-metal);
 }
