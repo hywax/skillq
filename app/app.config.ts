@@ -6,6 +6,8 @@ export default defineAppConfig({
   icon: {
     aliases: {
       'arrow-right': 'lucide:arrow-right',
+      'chevron-right': 'lucide:chevron-right',
+      'sparkles': 'lucide:sparkles',
       'github': 'lucide:github',
       'sponsor': 'lucide:coffee',
       'language': 'lucide:languages',
@@ -21,7 +23,7 @@ export default defineAppConfig({
   },
   ui: {
     colors: {
-      primary: 'indigo',
+      primary: 'rose',
       neutral: 'neutral',
     },
   },

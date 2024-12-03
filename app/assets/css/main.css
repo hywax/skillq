@@ -2,7 +2,7 @@
 @import "@nuxt/ui";
 
 @theme {
-  --font-sans: 'Inter', sans-serif;
+  --font-sans: 'Geist', sans-serif;
 }
 
 :root {
@@ -24,7 +24,7 @@
   box-shadow: var(--ui-shadow-metal);
 }
 
-.bg-dots {
-  background-image: var(--ui-bg-dots);
-  background-size: 0.75rem 0.75rem;
-}
+/*.bg-dots {*/
+/*  background-image: var(--ui-bg-dots);*/
+/*  background-size: 0.75rem 0.75rem;*/
+/*}*/

@@ -1,6 +1,6 @@
 <template>
   <div class="h-[var(--ui-footer-height)] bg-[var(--ui-bg)]/75 backdrop-blur">
-    <USeparator class="h-px" icon="skillq-logo-outline" :ui="{ border: 'border-[var(--color-gray-100)] dark:border-[var(--color-gray-800)]' }" />
+    <USeparator class="h-px" icon="skillq-logo-outline" />
 
     <UContainer class="py-4 flex items-center justify-between gap-x-3">
       <div class="text-sm text-[var(--ui-text-muted)] flex items-center gap-x-1.5">
@@ -15,7 +15,7 @@
         </i18n-t>
         <p class="hidden md:inline">
           <span class="-ml-[5px]">.</span>
-          {{ $t('app.footer.epistle') }}
+          {{ $t('app.footer.epistle') }}.
         </p>
       </div>
       <div class="flex-1 flex items-center justify-end gap-x-1.5">

@@ -8,10 +8,13 @@
       "personal": "Personal Website",
       "github": "Github Repository",
       "sponsor": "Sponsor",
-      "tryNow": "Get started"
+      "tryNow": "Start Building"
     },
     "language": {
       "label": "Language"
+    },
+    "release": {
+      "new": "New Release"
     },
     "theme": {
       "label": "Theme",
@@ -26,8 +29,9 @@
   "home": {
     "hero": {
       "title": "Highlight your expertise effortlessly on resumé",
+      "description": "SkillQ is a tool that allows you to easily add your skills and experience to your resume, making it more attractive and compelling to potential employers.",
       "action": {
-        "tryNow": "Get started",
+        "tryNow": "Start Building",
         "star": "Star on Github"
       }
     }

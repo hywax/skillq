@@ -1,11 +1,7 @@
 <template>
-  <HomeHero
-    class="min-h-[inherit] flex flex-col justify-center items-center"
-    :activity="data?.activity"
-    :icons="data?.icons"
-  />
+  <UContainer class="min-h-[inherit] flex flex-col justify-center items-center">
+    <AppRelease class="mx-auto mb-4" />
+    <HomeHero />
+    <HomeSpecialties />
+  </UContainer>
 </template>
-
-<script setup lang="ts">
-const { data } = await useFetch('/api/home')
-</script>
