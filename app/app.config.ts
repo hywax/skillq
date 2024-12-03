@@ -6,8 +6,8 @@ export default defineAppConfig({
   icon: {
     aliases: {
       'arrow-right': 'lucide:arrow-right',
-      'github': 'simple-icons:github',
-      'sponsor': 'lucide:heart',
+      'github': 'lucide:github',
+      'sponsor': 'lucide:coffee',
       'language': 'lucide:languages',
       'rocket': 'lucide:rocket',
       'star': 'lucide:star',

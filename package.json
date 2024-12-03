@@ -40,7 +40,6 @@
     "@hywax/tools-eslint": "^1.0.0",
     "@iconify-json/circle-flags": "^1.2.1",
     "@iconify-json/lucide": "^1.2.17",
-    "@iconify-json/simple-icons": "^1.2.13",
     "@types/node": "^22.10.1",
     "changelogen": "^0.5.7",
     "husky": "^9.1.7",
