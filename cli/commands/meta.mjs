@@ -42,6 +42,7 @@ export default defineCommand({
           filled: false,
           duo: false,
           page: 0,
+          position: 0,
         }
 
         iconsMap.set(icon.name, {})
@@ -74,6 +75,7 @@ export default defineCommand({
       }
 
       icon.page = page
+      icon.position = index % meta.pages.perPage
       meta.pages.list[page].push(icon.name)
     }
 
