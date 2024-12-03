@@ -1,16 +1,1 @@
-<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_85_174)">
-<path d="M196 0H60C26.8629 0 0 26.8629 0 60V196C0 229.137 26.8629 256 60 256H196C229.137 256 256 229.137 256 196V60C256 26.8629 229.137 0 196 0Z" fill="#F4F2ED"/>
-<path d="M127.079 219.046L40 172.909L69.7822 157.255L103.311 175.012L131.444 160.222L97.9158 142.465L127.696 126.774L214.777 172.909L184.994 188.563L153.317 171.784L125.142 186.611L156.861 203.392L127.079 219.046Z" fill="black"/>
-<path d="M127.081 127.272L40 81.1372L69.7822 65.481L103.313 83.2383L131.447 68.4479L97.9158 50.6906L127.698 35L214.777 81.1349L184.994 96.7887L153.319 80.0097L125.144 94.8369L156.861 111.618L127.081 127.272Z" fill="url(#paint0_linear_85_174)"/>
-</g>
-<defs>
-<linearGradient id="paint0_linear_85_174" x1="164.998" y1="35" x2="138.781" y2="141.031" gradientUnits="userSpaceOnUse">
-<stop stop-color="#0DA3D3"/>
-<stop offset="1" stop-color="#27245D"/>
-</linearGradient>
-<clipPath id="clip0_85_174">
-<rect width="256" height="256" fill="white"/>
-</clipPath>
-</defs>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" fill="none"><g clip-path="url(#clip0_85_174)"><path fill="#F4F2ED" d="M196 0H60C26.863 0 0 26.863 0 60v136c0 33.137 26.863 60 60 60h136c33.137 0 60-26.863 60-60V60c0-33.137-26.863-60-60-60"/><path fill="#000" d="M127.079 219.046 40 172.909l29.782-15.654 33.529 17.757 28.133-14.79-33.528-17.757 29.78-15.691 87.081 46.135-29.783 15.654-31.677-16.779-28.175 14.827 31.719 16.781z"/><path fill="url(#paint0_linear_85_174)" d="M127.081 127.272 40 81.137l29.782-15.656 33.531 17.757 28.134-14.79L97.916 50.69 127.698 35l87.079 46.135-29.783 15.654-31.675-16.78-28.175 14.828 31.717 16.781z"/></g><defs><linearGradient id="paint0_linear_85_174" x1="164.998" x2="138.781" y1="35" y2="141.031" gradientUnits="userSpaceOnUse"><stop stop-color="#0DA3D3"/><stop offset="1" stop-color="#27245D"/></linearGradient><clipPath id="clip0_85_174"><path fill="#fff" d="M0 0h256v256H0z"/></clipPath></defs></svg>
