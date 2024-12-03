@@ -46,6 +46,7 @@ export default defineCommand({
       'sortDefsChildren',
       'removeTitle',
       'removeDesc',
+      'removeDimensions',
     ]
     const stats = {
       optimized: 0,

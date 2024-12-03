@@ -20,6 +20,7 @@
     "clean:modules": "rm -rf .nuxt node_modules",
     "cli:security": "node cli/index.mjs security",
     "cli:meta": "node cli/index.mjs meta",
+    "cli:optimize": "node cli/index.mjs optimize",
     "postinstall": "nuxt prepare",
     "prepare": "husky"
   },
