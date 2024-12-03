@@ -8,7 +8,7 @@
 :root {
   --ui-header-height: calc(var(--spacing) * 16);
   --ui-footer-height: calc(var(--spacing) * 16);
-  --ui-main-height: calc(100vh - var(--ui-header-height) - var(--ui-footer-height));
+  --ui-main-height: calc(100vh - var(--ui-header-height) - var(--ui-footer-height) - 1px);
   --ui-bg-dots: radial-gradient(hsla(0, 0%, 86%, .3) 1px, transparent 0);
   --ui-shadow-metal: 0 0 0 1px rgba(14, 63, 126, 0.06), 0 1px 1px -0.5px rgba(42, 51, 70, 0.03),
                      0 2px 2px -1px rgba(42, 51, 70, 0.04), 0 3px 3px -1.5px rgba(42, 51, 70, 0.04),
