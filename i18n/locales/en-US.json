@@ -40,6 +40,14 @@
       "refresh": "Refresh"
     },
     "status": {
+      "400": {
+        "title": "Bad request",
+        "message": "Bad request. Please, check your request and try again"
+      },
+      "403": {
+        "title": "Forbidden",
+        "message": "You don't have permission to access this resource"
+      },
       "404": {
         "title": "Page not found",
         "message": "We are sorry, but the page you are looking for cannot be found on our site. The page may have been deleted or moved, or you may have entered an incorrect address"

@@ -22,7 +22,7 @@ const localePath = useLocalePath()
 const error = useError()
 
 const title = computed(() => {
-  return $t(`errors.status.${error.value?.statusCode}.title`) || error.value?.name || $t('errors.title')
+  return $te(`errors.status.${error.value?.statusCode}.title`) ? $t(`errors.status.${error.value?.statusCode}.title`) : $t('errors.title')
 })
 
 const message = computed(() => {
@@ -30,7 +30,7 @@ const message = computed(() => {
     return error.value.message
   }
 
-  return $t(`errors.status.${error.value?.statusCode}.message`) || $t('errors.message')
+  return $te(`errors.status.${error.value?.statusCode}.message`) ? $t(`errors.status.${error.value?.statusCode}.message`) : $t('errors.message')
 })
 
 const buttonLabel = computed(() => {
