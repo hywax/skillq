@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import { defineCommand, runMain } from 'citty'
 import meta from './commands/meta.mjs'
+import optimize from './commands/optimize.mjs'
 import security from './commands/security.mjs'
 
 const main = defineCommand({
@@ -11,6 +12,7 @@ const main = defineCommand({
   subCommands: {
     security,
     meta,
+    optimize,
   },
 })
 
