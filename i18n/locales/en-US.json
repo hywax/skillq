@@ -66,6 +66,26 @@
     "meta": {
       "title": "Sponsor",
       "description": "Help develop the project by becoming a sponsor"
+    },
+    "variants": {
+      "title": "Support Our Project",
+      "description": "We believe that important things should be accessible to everyone, and thanks to your support, we can continue to develop our service, improve its quality, and add new features. If you find our project useful, support us in one of the convenient ways",
+      "kofi": {
+        "label": "Ko-fi",
+        "description": "Send us a symbolic \"cup of coffee\". It's a quick and easy way to show your appreciation."
+      },
+      "boosty": {
+        "label": "Boosty",
+        "description": "Become a regular supporter and gain access to exclusive materials."
+      },
+      "github": {
+        "label": "GitHub Stars",
+        "description": "Completely free: star our repository on GitHub to inspire other developers to get involved."
+      }
+    },
+    "community": {
+      "title": "Community",
+      "description": "A list of people who have supported the project"
     }
   },
   "errors": {

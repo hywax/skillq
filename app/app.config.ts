@@ -11,6 +11,7 @@ export default defineAppConfig({
   icon: {
     aliases: {
       'arrow-right': 'lucide:arrow-right',
+      'arrow-up-right': 'lucide:arrow-up-right',
       'chevron-right': 'lucide:chevron-right',
       'sparkles': 'lucide:sparkles',
       'github': 'simple-icons:github',

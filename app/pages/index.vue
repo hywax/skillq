@@ -1,5 +1,5 @@
 <template>
-  <UContainer class="min-h-[inherit] flex flex-col justify-center items-center">
+  <UContainer class="min-h-[inherit] flex flex-col justify-center items-center py-16">
     <AppRelease class="mx-auto mb-4" />
     <HomeHero />
     <HomeSpecialties />
