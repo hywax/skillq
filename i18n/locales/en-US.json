@@ -1,5 +1,13 @@
 {
   "app": {
+    "header": {
+      "menu": {
+        "skills": "Skills",
+        "sponsor": "Sponsor",
+        "github": "Github",
+        "releases": "Releases"
+      }
+    },
     "footer": {
       "copyright": "SkillQ by {author}",
       "epistle": "For the Love of Code"
@@ -7,30 +15,35 @@
     "link": {
       "personal": "Personal Website",
       "github": "Github Repository",
-      "sponsor": "Sponsor",
-      "tryNow": "Get started"
+      "kofi": "Ko-fi",
+      "boosty": "Boosty",
+      "sponsor": "Sponsor"
     },
     "language": {
       "label": "Language"
+    },
+    "release": {
+      "new": "New Release"
     },
     "theme": {
       "label": "Theme",
       "light": "Switch to Light theme",
       "dark": "Switch to Dark theme"
-    },
-    "activity": {
-      "label": "Github Repository",
-      "description": "Rated Best Over {star} Stars"
     }
   },
   "home": {
     "hero": {
       "title": "Highlight your expertise effortlessly on resumé",
+      "description": "SkillQ is a tool that allows you to easily add your skills and experience to your resume, making it more attractive and compelling to potential employers.",
       "action": {
-        "tryNow": "Get started",
+        "tryNow": "Start Building",
         "star": "Star on Github"
       }
     }
+  },
+  "coming-soon": {
+    "title": "Coming soon",
+    "description": "I am working on this functionality. Please come back later."
   },
   "errors": {
     "title": "Something's wrong",

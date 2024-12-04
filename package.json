@@ -32,6 +32,7 @@
     "nuxt": "^3.14.1592",
     "nuxt-zod-i18n": "1.11.2",
     "octokit": "^4.0.2",
+    "vue3-marquee": "^4.2.2",
     "zod": "^3.23.8"
   },
   "devDependencies": {
@@ -40,6 +41,7 @@
     "@hywax/tools-eslint": "^1.0.0",
     "@iconify-json/circle-flags": "^1.2.1",
     "@iconify-json/lucide": "^1.2.17",
+    "@iconify-json/simple-icons": "^1.2.14",
     "@types/node": "^22.10.1",
     "changelogen": "^0.5.7",
     "husky": "^9.1.7",

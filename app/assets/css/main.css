@@ -2,29 +2,19 @@
 @import "@nuxt/ui";
 
 @theme {
-  --font-sans: 'Inter', sans-serif;
+  --font-sans: 'Geist', sans-serif;
 }
 
 :root {
   --ui-header-height: calc(var(--spacing) * 16);
   --ui-footer-height: calc(var(--spacing) * 16);
   --ui-main-height: calc(100vh - var(--ui-header-height) - var(--ui-footer-height) - 1px);
-  --ui-bg-dots: radial-gradient(hsla(0, 0%, 86%, .3) 1px, transparent 0);
   --ui-shadow-metal: 0 0 0 1px rgba(14, 63, 126, 0.06), 0 1px 1px -0.5px rgba(42, 51, 70, 0.03),
                      0 2px 2px -1px rgba(42, 51, 70, 0.04), 0 3px 3px -1.5px rgba(42, 51, 70, 0.04),
                      0 5px 5px -2.5px rgba(42, 51, 70, 0.03), 0 10px 10px -5px rgba(42, 51, 70, 0.03),
                      0 24px 24px -8px rgba(42, 51, 70, 0.03);
 }
 
-.dark {
-  --ui-bg-dots: radial-gradient(hsla(0, 0%, 20%, .3) 1px, transparent 0);
-}
-
 .metal-shadow {
   box-shadow: var(--ui-shadow-metal);
-}
-
-.bg-dots {
-  background-image: var(--ui-bg-dots);
-  background-size: 0.75rem 0.75rem;
 }
