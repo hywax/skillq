@@ -1,4 +1,7 @@
 export default defineAppConfig({
+  app: {
+    name: 'SkillQ',
+  },
   links: {
     personal: 'https://hywax.space',
     github: 'https://github.com/hywax/skillq',

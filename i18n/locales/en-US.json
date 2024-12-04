@@ -2,6 +2,7 @@
   "app": {
     "header": {
       "menu": {
+        "builder": "Builder",
         "skills": "Skills",
         "sponsor": "Sponsor",
         "github": "Github",
@@ -29,9 +30,17 @@
       "label": "Theme",
       "light": "Switch to Light theme",
       "dark": "Switch to Dark theme"
+    },
+    "coming-soon": {
+      "title": "Coming soon",
+      "description": "I am working on this functionality. Please come back later."
     }
   },
   "home": {
+    "meta": {
+      "title": "",
+      "description": ""
+    },
     "hero": {
       "title": "Highlight your expertise effortlessly on resumé",
       "description": "SkillQ is a tool that allows you to easily add your skills and experience to your resume, making it more attractive and compelling to potential employers.",
@@ -41,9 +50,23 @@
       }
     }
   },
-  "coming-soon": {
-    "title": "Coming soon",
-    "description": "I am working on this functionality. Please come back later."
+  "builder": {
+    "meta": {
+      "title": "",
+      "description": ""
+    }
+  },
+  "skills": {
+    "meta": {
+      "title": "",
+      "description": ""
+    }
+  },
+  "sponsor": {
+    "meta": {
+      "title": "",
+      "description": ""
+    }
   },
   "errors": {
     "title": "Something's wrong",
