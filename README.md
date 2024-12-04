@@ -31,4 +31,4 @@ Here are some ways you can contribute:
 
 ## License
 
-Shorter is open-source software licensed under the GNU Affero General Public License Version 3 (AGPLv3) or any later version. You can [find it here](https://github.com/hywax/skillq/blob/main/LICENSE.md).
+Shorter is open-source software licensed under the GNU Affero General Public License Version 3 (AGPLv3) or any later version. You can [find it here](https://github.com/hywax/skillq/blob/main/LICENSE).
