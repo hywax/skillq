@@ -1,6 +1,29 @@
 # Changelog
 
 
+## v0.3.0
+
+[compare changes](https://github.com/hywax/skillq/compare/v0.2.0...v0.3.0)
+
+### 🚀 Enhancements
+
+- Seo ([#23](https://github.com/hywax/skillq/pull/23))
+- Implement sponsor page ([#24](https://github.com/hywax/skillq/pull/24))
+
+### 🩹 Fixes
+
+- Invalid license url ([2d38ae6](https://github.com/hywax/skillq/commit/2d38ae6))
+
+### 🏡 Chore
+
+- Funding Ko-fi service ([ab8f8c1](https://github.com/hywax/skillq/commit/ab8f8c1))
+- Sponsor variant style card ([7e83dbb](https://github.com/hywax/skillq/commit/7e83dbb))
+
+### ❤️ Contributors
+
+- Hywax ([@hywax](http://github.com/hywax))
+- Alex ([@hywax](http://github.com/hywax))
+
 ## v0.2.0
 
 [compare changes](https://github.com/hywax/skillq/compare/v0.1.0...v0.2.0)
