@@ -1,16 +1,16 @@
 <template>
   <UContainer v-if="error" class="h-screen flex flex-col justify-center items-center">
-    <p class="font-semibold">
+    <UBadge variant="soft" class="mb-4">
       {{ error?.statusCode || 404 }}
-    </p>
-    <h1 class="text-4xl sm:text-6xl lg:text-7xl tracking-tight text-[var(--ui-bg-inverted)] font-extrabold text-center max-w-4xl mx-auto">
+    </UBadge>
+    <h1 class="text-balance text-4xl md:text-5xl font-semibold max-w-3xl mx-auto xl:text-5xl xl:[line-height:1.125]">
       {{ title }}
     </h1>
-    <p class="mt-6 text-lg text-center text-[var(--ui-text-muted)] max-w-3xl">
+    <p class="text-balance mx-auto text-center mt-8 max-w-2xl text-lg hidden sm:block">
       {{ message }}
     </p>
-    <div class="mt-10 flex items-center justify-center gap-x-6">
-      <UButton size="lg" color="neutral" @click="handleError">
+    <div class="mt-8 flex items-center justify-center gap-4">
+      <UButton size="lg" @click="handleError">
         {{ buttonLabel }}
       </UButton>
     </div>
