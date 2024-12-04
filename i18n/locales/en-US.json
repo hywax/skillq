@@ -1,5 +1,13 @@
 {
   "app": {
+    "header": {
+      "menu": {
+        "skills": "Skills",
+        "sponsor": "Sponsor",
+        "github": "Github",
+        "releases": "Releases"
+      }
+    },
     "footer": {
       "copyright": "SkillQ by {author}",
       "epistle": "For the Love of Code"
@@ -7,8 +15,9 @@
     "link": {
       "personal": "Personal Website",
       "github": "Github Repository",
-      "sponsor": "Sponsor",
-      "tryNow": "Start Building"
+      "kofi": "Ko-fi",
+      "boosty": "Boosty",
+      "sponsor": "Sponsor"
     },
     "language": {
       "label": "Language"
@@ -20,10 +29,6 @@
       "label": "Theme",
       "light": "Switch to Light theme",
       "dark": "Switch to Dark theme"
-    },
-    "activity": {
-      "label": "Github Repository",
-      "description": "Rated Best Over {star} Stars"
     }
   },
   "home": {
@@ -35,6 +40,10 @@
         "star": "Star on Github"
       }
     }
+  },
+  "coming-soon": {
+    "title": "Coming soon",
+    "description": "I am working on this functionality. Please come back later."
   },
   "errors": {
     "title": "Something's wrong",

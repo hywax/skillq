@@ -54,6 +54,9 @@ importers:
       '@iconify-json/lucide':
         specifier: ^1.2.17
         version: 1.2.17
+      '@iconify-json/simple-icons':
+        specifier: ^1.2.14
+        version: 1.2.14
       '@types/node':
         specifier: ^22.10.1
         version: 22.10.1
@@ -766,6 +769,9 @@ packages:
 
   '@iconify-json/lucide@1.2.17':
     resolution: {integrity: sha512-y+4P1DxD2h4d4fGYxikUdMf0o21DD0GIE/YIgixEBIXKbE90LTOFqmoxkGyPpaGk3vT2qE2w/28+sdmBMFsd5w==}
+
+  '@iconify-json/simple-icons@1.2.14':
+    resolution: {integrity: sha512-zLqb48pM1B5vegMBDouyv7FzrROV5HRIjDpl+/PKjY3P7AeSySaOeT6mzutF6hDZCJvn1J7qQ7lug3FOgegiiA==}
 
   '@iconify/collections@1.0.489':
     resolution: {integrity: sha512-PmNZV+gm+NFT7VXjRmbYezydt6ZpbrVh6MQYEqWIWHNQjDRJ2n8q6Hs7zEuukN9paIqsv12kyqst5K+8Arq5hQ==}
@@ -5995,6 +6001,10 @@ snapshots:
       '@iconify/types': 2.0.0
 
   '@iconify-json/lucide@1.2.17':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/simple-icons@1.2.14':
     dependencies:
       '@iconify/types': 2.0.0
 

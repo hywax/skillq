@@ -37,7 +37,7 @@
 <script setup>
 import { Vue3Marquee } from 'vue3-marquee'
 
-const itemClass = 'rounded-lg px-3 py-2 mx-2 my-2'
+const itemClass = 'rounded-lg px-3 py-1.5 mx-2 my-2'
 
 const rows = 2
 const items = [

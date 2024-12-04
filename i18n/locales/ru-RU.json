@@ -1,5 +1,13 @@
 {
   "app": {
+    "header": {
+      "menu": {
+        "skills": "Навыки",
+        "sponsor": "Поддержать",
+        "github": "Github",
+        "releases": "Релизы"
+      }
+    },
     "footer": {
       "copyright": "SkillQ от {author}",
       "epistle": "Ради любви к коду"
@@ -7,8 +15,9 @@
     "link": {
       "personal": "Личный сайт",
       "github": "Github репозиторий",
-      "sponsor": "Поддержать",
-      "tryNow": "Начать"
+      "kofi": "Ko-fi",
+      "boosty": "Boosty",
+      "sponsor": "Поддержать"
     },
     "language": {
       "label": "Язык"
@@ -20,10 +29,6 @@
       "label": "Тема",
       "light": "Переключить на светлую тему",
       "dark": "Переключить на темную тему"
-    },
-    "activity": {
-      "label": "Github репозиторий",
-      "description": "{star} уже оценили проект"
     }
   },
   "home": {
@@ -35,6 +40,10 @@
         "star": "Звезда на Github"
       }
     }
+  },
+  "coming-soon": {
+    "title": "Скоро будет",
+    "description": "Я работаю над этим функционалом. Пожалуйста, вернитесь позже."
   },
   "errors": {
     "title": "Что-то пошло не так",
