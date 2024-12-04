@@ -2,6 +2,7 @@
   "app": {
     "header": {
       "menu": {
+        "builder": "Builder",
         "skills": "Skills",
         "sponsor": "Sponsor",
         "github": "Github",
@@ -29,21 +30,43 @@
       "label": "Theme",
       "light": "Switch to Light theme",
       "dark": "Switch to Dark theme"
+    },
+    "coming-soon": {
+      "title": "Coming soon",
+      "description": "I am working on this functionality. Please come back later."
     }
   },
   "home": {
+    "meta": {
+      "title": "SkillQ - Highlight your expertise effortlessly on resumé",
+      "description": "Enhance your resume with a handy tool to highlight professional skills and experience"
+    },
     "hero": {
       "title": "Highlight your expertise effortlessly on resumé",
-      "description": "SkillQ is a tool that allows you to easily add your skills and experience to your resume, making it more attractive and compelling to potential employers.",
+      "description": "SkillQ is a tool that allows you to easily add your skills and experience to your resume, making it more attractive and compelling to potential employers",
       "action": {
         "tryNow": "Start Building",
         "star": "Star on Github"
       }
     }
   },
-  "coming-soon": {
-    "title": "Coming soon",
-    "description": "I am working on this functionality. Please come back later."
+  "builder": {
+    "meta": {
+      "title": "Builder",
+      "description": "Build your perfect resume with our handy skills builder"
+    }
+  },
+  "skills": {
+    "meta": {
+      "title": "Skills",
+      "description": "List of all available skills"
+    }
+  },
+  "sponsor": {
+    "meta": {
+      "title": "Sponsor",
+      "description": "Help develop the project by becoming a sponsor"
+    }
   },
   "errors": {
     "title": "Something's wrong",

@@ -11,8 +11,13 @@ export default defineNuxtConfig({
       envPrefix: 'APP_',
     },
     public: {
-      githubOwner: 'hywax',
-      githubRepo: 'skillq',
+      github: {
+        owner: 'hywax',
+        repo: 'skillq',
+      },
+      i18n: {
+        baseUrl: '',
+      },
     },
     githubToken: '',
   },
@@ -81,5 +86,5 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   compatibilityDate: '2024-11-01',
   future: { compatibilityVersion: 4 },
-  devtools: { enabled: false },
+  devtools: { enabled: true },
 })

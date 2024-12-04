@@ -21,6 +21,10 @@ const localePath = useLocalePath()
 
 const links = [
   {
+    label: $t('app.header.menu.builder'),
+    to: localePath('/builder'),
+  },
+  {
     label: $t('app.header.menu.skills'),
     to: localePath('/skills'),
   },
