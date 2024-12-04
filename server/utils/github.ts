@@ -16,27 +16,34 @@ export function useOctokit() {
 export const getActivityStats = defineCachedFunction(async () => {
   const octokit = useOctokit()
   const config = useRuntimeConfig()
-  const owner = config.public.githubOwner
-  const repo = config.public.githubRepo
+  const { owner, repo } = config.public.github
 
   try {
+    const { data: contributors } = await octokit.rest.repos.listContributors({ owner, repo })
     const { data: users } = await octokit.rest.activity.listStargazersForRepo({ owner, repo })
-    const { data: repository } = await octokit.rest.repos.get({ owner, repo })
+
+    const stack = new Map<string, { type: string, name: string, avatar: string }>()
+
+    users
+      .filter((user) => 'login' in user)
+      .forEach((user) => stack.set(user.login, { type: 'star', name: user.login, avatar: user.avatar_url }))
+
+    contributors
+      .filter((contributor) => 'login' in contributor && contributor.login)
+      .forEach((contributor) => stack.set(contributor.login!, {
+        type: 'contributor',
+        name: contributor.login!,
+        avatar: contributor.avatar_url!,
+      }))
 
     return {
-      stars: repository.stargazers_count,
-      users: users
-        .slice(0, 4)
-        .filter((user) => 'login' in user)
-        .map((user) => ({ name: user.login, avatar: user.avatar_url })),
+      users: [...stack.values()].reverse(),
     }
   } catch (e) {
-    // todo: handle error
     console.error(e)
   }
 
   return {
-    stars: 0,
     users: [],
   }
 }, {
