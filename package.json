@@ -49,11 +49,6 @@
     "typescript": "^5.7.2",
     "vue-tsc": "^2.1.10"
   },
-  "pnpm": {
-    "overrides": {
-      "unimport": "3.14.3"
-    }
-  },
   "lint-staged": {
     "*.ts": "pnpm run lint"
   },
