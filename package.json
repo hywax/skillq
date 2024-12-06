@@ -8,7 +8,7 @@
     "skillq": "./cli/index.mjs"
   },
   "scripts": {
-    "build": "nuxt build && pnpm run cli:meta --prod",
+    "build": "pnpm run cli:meta && nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
