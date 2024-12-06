@@ -54,12 +54,19 @@
     "meta": {
       "title": "Builder",
       "description": "Build your perfect resume with our handy skills builder"
-    }
-  },
-  "skills": {
-    "meta": {
-      "title": "Skills",
-      "description": "List of all available skills"
+    },
+    "overview": {
+      "search": {
+        "placeholder": "Search..."
+      },
+      "type": {
+        "all": "All",
+        "filled": "Filled",
+        "duo": "Duo"
+      },
+      "pagination": {
+        "total": "Total icons {total}"
+      }
     }
   },
   "sponsor": {
