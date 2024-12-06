@@ -1,4 +1,4 @@
-import type { Icons, Meta } from '#shared/types'
+import type { Icons, Meta, MetaIcon } from '#shared/types'
 
 function _useIcons() {
   const {
@@ -24,6 +24,18 @@ function _useIcons() {
       .reduce((acc, chunk) => ({ ...acc, ...chunk.value }), {})
   }, { immediate: false, deep: false, server: false, watch: [meta] })
 
+  const getSVGIcon = (meta: MetaIcon, theme: 'light' | 'dark' = 'light') => {
+    const variants = icons.value?.[meta.name]
+
+    if (!variants) {
+      // todo maybe add default icon
+      return ''
+    }
+
+    // @ts-expect-error todo resolve types
+    return meta.duo ? variants[theme] : variants.filled
+  }
+
   return {
     icons,
     meta,
@@ -31,6 +43,7 @@ function _useIcons() {
     iconsStatus,
     fetchIcons,
     fetchMeta,
+    getSVGIcon,
   }
 }
 
