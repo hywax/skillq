@@ -15,8 +15,8 @@ importers:
         specifier: ^3.0.0-alpha.9
         version: 3.0.0-alpha.9(@babel/core@7.26.0)(@babel/parser@7.26.3)(change-case@5.4.4)(embla-carousel@8.5.1)(ioredis@5.4.1)(magicast@0.3.5)(postcss@8.4.49)(rollup@4.28.0)(svelte@5.6.2)(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.1)(lightningcss@1.28.2)(terser@5.36.0))(vue@3.5.13(typescript@5.7.2))
       '@nuxtjs/i18n':
-        specifier: 9.1.0
-        version: 9.1.0(@vue/compiler-dom@3.5.13)(eslint@9.16.0(jiti@2.4.1))(magicast@0.3.5)(rollup@4.28.0)(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2))
+        specifier: 9.1.1
+        version: 9.1.1(@vue/compiler-dom@3.5.13)(eslint@9.16.0(jiti@2.4.1))(magicast@0.3.5)(rollup@4.28.0)(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2))
       '@vueuse/nuxt':
         specifier: 12.0.0
         version: 12.0.0(magicast@0.3.5)(nuxt@3.14.1592(@parcel/watcher@2.5.0)(@types/node@22.10.1)(eslint@9.16.0(jiti@2.4.1))(ioredis@5.4.1)(lightningcss@1.28.2)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.28.0)(terser@5.36.0)(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.1)(lightningcss@1.28.2)(terser@5.36.0))(vue-tsc@2.1.10(typescript@5.7.2)))(rollup@4.28.0)(typescript@5.7.2)
@@ -49,8 +49,8 @@ importers:
         specifier: ^1.2.1
         version: 1.2.1
       '@iconify-json/lucide':
-        specifier: ^1.2.17
-        version: 1.2.17
+        specifier: ^1.2.18
+        version: 1.2.18
       '@iconify-json/simple-icons':
         specifier: ^1.2.14
         version: 1.2.14
@@ -764,8 +764,8 @@ packages:
   '@iconify-json/circle-flags@1.2.1':
     resolution: {integrity: sha512-/gDW8eWHUcF22aR4RIAoqtyBWy2VQOS7JFk27z+gFJ4gxiSS2dRG156sU8Hy30TYf5MaN/fRQPwAJ1ksfiXQig==}
 
-  '@iconify-json/lucide@1.2.17':
-    resolution: {integrity: sha512-y+4P1DxD2h4d4fGYxikUdMf0o21DD0GIE/YIgixEBIXKbE90LTOFqmoxkGyPpaGk3vT2qE2w/28+sdmBMFsd5w==}
+  '@iconify-json/lucide@1.2.18':
+    resolution: {integrity: sha512-SFBoHBSULntem84iWxGM9NzlP6QY/dwjxC5t4c1lC7+xq31Fous8JkppoJih0/ICJ3CsbppRZeb11y3iLcwwug==}
 
   '@iconify-json/simple-icons@1.2.14':
     resolution: {integrity: sha512-zLqb48pM1B5vegMBDouyv7FzrROV5HRIjDpl+/PKjY3P7AeSySaOeT6mzutF6hDZCJvn1J7qQ7lug3FOgegiiA==}
@@ -795,8 +795,8 @@ packages:
   '@internationalized/number@3.6.0':
     resolution: {integrity: sha512-PtrRcJVy7nw++wn4W2OuePQQfTqDzfusSuY1QTtui4wa7r+rGVtR75pO8CyKvHvzyQYi3Q1uO5sY0AsB4e65Bw==}
 
-  '@intlify/bundle-utils@9.0.0':
-    resolution: {integrity: sha512-19dunbgM4wuCvi2xSai2PKhXkcKGjlbJhNWm9BCQWkUYcPmXwzptNWOE0O7OSrhNlEDxwpkHsJzZ/vLbCkpElw==}
+  '@intlify/bundle-utils@10.0.0':
+    resolution: {integrity: sha512-BR5yLOkF2dzrARTbAg7RGAIPcx9Aark7p1K/0O285F7rfzso9j2dsa+S4dA67clZ0rToZ10NSSTfbyUptVu7Bg==}
     engines: {node: '>= 18'}
     peerDependencies:
       petite-vue-i18n: '*'
@@ -839,8 +839,8 @@ packages:
     resolution: {integrity: sha512-uRAHAxYPeF+G5DBIboKpPgC/Waecd4Jz8ihtkpJQD5ycb5PwXp0k/+hBGl5dAjwF7w+l74kz/PKA8r8OK//RUw==}
     engines: {node: '>= 16'}
 
-  '@intlify/unplugin-vue-i18n@5.3.1':
-    resolution: {integrity: sha512-76huP8TpMOtBMLsYYIMLNbqMPXJ7+Q6xcjP6495h/pmbOQ7sw/DB8E0OFvDFeIZ2571a4ylzJnz+KMuYbAs1xA==}
+  '@intlify/unplugin-vue-i18n@6.0.1':
+    resolution: {integrity: sha512-zDcGLNoaIP15JM4TGwgTHF01Y1Drwcv7pm9C2mHrGAZ3CugqyP2QEG0Vf82QVSNqgEwgB6prcAyDmjIDK1HlRQ==}
     engines: {node: '>= 18'}
     peerDependencies:
       petite-vue-i18n: '*'
@@ -997,8 +997,8 @@ packages:
   '@nuxtjs/color-mode@3.5.2':
     resolution: {integrity: sha512-cC6RfgZh3guHBMLLjrBB2Uti5eUoGM9KyauOaYS9ETmxNWBMTvpgjvSiSJp1OFljIXPIqVTJ3xtJpSNZiO3ZaA==}
 
-  '@nuxtjs/i18n@9.1.0':
-    resolution: {integrity: sha512-2wDdZsGgvr6SWMSUaTgQhk7ytVuca3RkTR1zijDaQ6u6wnk8MeVPujINVBO/U6ufYTggSf+TM66R7bzGYf/brg==}
+  '@nuxtjs/i18n@9.1.1':
+    resolution: {integrity: sha512-S8l5ri1GFo5OUsl9qSgicE9Sm0BZjVHU7p6ml1qhQUTewngnTPTlcytWX5etwJeAjHEu2w9VAV4qXTn9Q5EgmQ==}
     engines: {node: ^14.16.0 || >=16.11.0}
 
   '@octokit/app@15.1.1':
@@ -6004,7 +6004,7 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify-json/lucide@1.2.17':
+  '@iconify-json/lucide@1.2.18':
     dependencies:
       '@iconify/types': 2.0.0
 
@@ -6048,7 +6048,7 @@ snapshots:
     dependencies:
       '@swc/helpers': 0.5.15
 
-  '@intlify/bundle-utils@9.0.0(vue-i18n@10.0.5(vue@3.5.13(typescript@5.7.2)))':
+  '@intlify/bundle-utils@10.0.0(vue-i18n@10.0.5(vue@3.5.13(typescript@5.7.2)))':
     dependencies:
       '@intlify/message-compiler': 11.0.0-beta.2
       '@intlify/shared': 11.0.0-beta.2
@@ -6093,10 +6093,10 @@ snapshots:
 
   '@intlify/shared@9.14.2': {}
 
-  '@intlify/unplugin-vue-i18n@5.3.1(@vue/compiler-dom@3.5.13)(eslint@9.16.0(jiti@2.4.1))(rollup@4.28.0)(typescript@5.7.2)(vue-i18n@10.0.5(vue@3.5.13(typescript@5.7.2)))(vue@3.5.13(typescript@5.7.2))':
+  '@intlify/unplugin-vue-i18n@6.0.1(@vue/compiler-dom@3.5.13)(eslint@9.16.0(jiti@2.4.1))(rollup@4.28.0)(typescript@5.7.2)(vue-i18n@10.0.5(vue@3.5.13(typescript@5.7.2)))(vue@3.5.13(typescript@5.7.2))':
     dependencies:
       '@eslint-community/eslint-utils': 4.4.1(eslint@9.16.0(jiti@2.4.1))
-      '@intlify/bundle-utils': 9.0.0(vue-i18n@10.0.5(vue@3.5.13(typescript@5.7.2)))
+      '@intlify/bundle-utils': 10.0.0(vue-i18n@10.0.5(vue@3.5.13(typescript@5.7.2)))
       '@intlify/shared': 10.0.5
       '@intlify/vue-i18n-extensions': 7.0.0(@intlify/shared@10.0.5)(@vue/compiler-dom@3.5.13)(vue-i18n@10.0.5(vue@3.5.13(typescript@5.7.2)))(vue@3.5.13(typescript@5.7.2))
       '@rollup/pluginutils': 5.1.3(rollup@4.28.0)
@@ -6640,11 +6640,11 @@ snapshots:
       - rollup
       - supports-color
 
-  '@nuxtjs/i18n@9.1.0(@vue/compiler-dom@3.5.13)(eslint@9.16.0(jiti@2.4.1))(magicast@0.3.5)(rollup@4.28.0)(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2))':
+  '@nuxtjs/i18n@9.1.1(@vue/compiler-dom@3.5.13)(eslint@9.16.0(jiti@2.4.1))(magicast@0.3.5)(rollup@4.28.0)(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2))':
     dependencies:
       '@intlify/h3': 0.6.1
       '@intlify/shared': 10.0.5
-      '@intlify/unplugin-vue-i18n': 5.3.1(@vue/compiler-dom@3.5.13)(eslint@9.16.0(jiti@2.4.1))(rollup@4.28.0)(typescript@5.7.2)(vue-i18n@10.0.5(vue@3.5.13(typescript@5.7.2)))(vue@3.5.13(typescript@5.7.2))
+      '@intlify/unplugin-vue-i18n': 6.0.1(@vue/compiler-dom@3.5.13)(eslint@9.16.0(jiti@2.4.1))(rollup@4.28.0)(typescript@5.7.2)(vue-i18n@10.0.5(vue@3.5.13(typescript@5.7.2)))(vue@3.5.13(typescript@5.7.2))
       '@intlify/utils': 0.13.0
       '@miyaneee/rollup-plugin-json5': 1.2.0(rollup@4.28.0)
       '@nuxt/kit': 3.14.1592(magicast@0.3.5)(rollup@4.28.0)

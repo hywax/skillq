@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.3.0",
   "private": true,
-  "packageManager": "pnpm@9.14.4",
+  "packageManager": "pnpm@9.15.0",
   "bin": {
     "skillq": "./cli/index.mjs"
   },
@@ -27,7 +27,7 @@
   "dependencies": {
     "@nuxt/ui": "^3.0.0-alpha.9",
     "@nuxt/ui-pro": "^3.0.0-alpha.9",
-    "@nuxtjs/i18n": "9.1.0",
+    "@nuxtjs/i18n": "9.1.1",
     "@vueuse/nuxt": "12.0.0",
     "nuxt": "^3.14.1592",
     "nuxt-zod-i18n": "1.11.2",
@@ -40,7 +40,7 @@
     "@commitlint/config-conventional": "^19.6.0",
     "@hywax/tools-eslint": "^1.1.0",
     "@iconify-json/circle-flags": "^1.2.1",
-    "@iconify-json/lucide": "^1.2.17",
+    "@iconify-json/lucide": "^1.2.18",
     "@iconify-json/simple-icons": "^1.2.14",
     "@types/node": "^22.10.1",
     "changelogen": "^0.5.7",
