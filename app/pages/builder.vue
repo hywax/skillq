@@ -1,11 +1,40 @@
 <template>
-  <UContainer class="min-h-[inherit] flex flex-col justify-center items-center text-center">
-    <h1 class="text-balance text-4xl md:text-5xl font-semibold max-w-3xl mx-auto xl:text-5xl xl:[line-height:1.125]">
-      {{ $t('app.coming-soon.title') }}
-    </h1>
-    <p class="text-balance mx-auto mt-8 max-w-2xl text-lg hidden sm:block">
-      {{ $t('app.coming-soon.description') }}
-    </p>
+  <UContainer>
+    <UPage class="h-[var(--ui-main-height)]">
+      <div class="h-full flex flex-col">
+        <div class="flex-1 flex flex-col gap-8 justify-center items-center">
+          <SectionHeader
+            :title="$t('sponsor.variants.title')"
+            :description="$t('sponsor.variants.description')"
+          />
+
+          <div class="w-full">
+            <div class="flex justify-center gap-4">
+              <div v-for="i in 5" :key="i" class="w-[64px] h-[64px] border border-dashed border-[#3a3a3a] rounded-lg" />
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <UButton size="lg" icon="sparkles" @click="fetchMeta()">
+              Generate Markdown
+            </UButton>
+            <UButton size="lg" variant="outline" icon="lucide:settings-2">
+              Preference
+            </UButton>
+          </div>
+        </div>
+
+        <div class="flex-1">
+          <IconsOverview
+            v-model:selected="selectedIcons"
+            :loading="isLoading"
+            :icons="icons"
+            :meta="meta"
+            :theme="colorMode.value"
+          />
+        </div>
+      </div>
+    </UPage>
   </UContainer>
 </template>
 
@@ -13,5 +42,16 @@
 usePageSEO({
   title: $t('builder.meta.title'),
   description: $t('builder.meta.description'),
+})
+
+const selectedIcons = ref<string[]>([])
+
+const colorMode = useColorMode()
+
+const { fetchMeta, metaStatus, iconsStatus, meta, icons } = useIcons()
+const isLoading = computed(() => metaStatus.value === 'pending' || iconsStatus.value === 'pending')
+
+onMounted(() => {
+  fetchMeta()
 })
 </script>

@@ -84,8 +84,7 @@ const items = [
     rgba(0, 0, 0, 1) 80%,
     rgba(0, 0, 0, 0) 95%,
     rgba(0, 0, 0, 0) 0
-  )
-  100% 50% / 100% 100%;
+  ) 100% 50% / 100% 100%;
 
   -webkit-mask: var(--mask);
   mask: var(--mask);

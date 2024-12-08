@@ -7,25 +7,19 @@ interface VariantDuo {
   dark: string
 }
 
-export type Variant = VariantFilled | VariantDuo | (VariantFilled & VariantDuo)
-
-export interface Meta {
-  icons: Record<string, MetaIcon>
-  pages: {
-    total: number
-    perPage: number
-    count: number
-    list: string[][]
-  }
-}
+export type Variants = VariantFilled | VariantDuo | (VariantFilled & VariantDuo)
 
 export interface MetaIcon {
   name: string
   aliases: string[]
   filled: boolean
   duo: boolean
-  page: number
-  position: number
 }
 
-export type MetaPage = Variant[]
+export interface Meta {
+  icons: MetaIcon[]
+  pages: number
+  total: number
+}
+
+export type Icons = Record<string, Variants>
