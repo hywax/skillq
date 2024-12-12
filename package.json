@@ -25,27 +25,27 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@nuxt/ui": "^3.0.0-alpha.9",
-    "@nuxt/ui-pro": "^3.0.0-alpha.9",
+    "@nuxt/ui": "^3.0.0-alpha.10",
+    "@nuxt/ui-pro": "^3.0.0-alpha.10",
     "@nuxtjs/i18n": "9.1.1",
     "@vueuse/nuxt": "12.0.0",
     "nuxt": "^3.14.1592",
     "nuxt-zod-i18n": "1.11.2",
     "octokit": "^4.0.2",
     "vue3-marquee": "^4.2.2",
-    "zod": "^3.23.8"
+    "zod": "^3.24.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.6.0",
     "@commitlint/config-conventional": "^19.6.0",
     "@hywax/tools-eslint": "^1.1.0",
-    "@iconify-json/circle-flags": "^1.2.1",
+    "@iconify-json/circle-flags": "^1.2.2",
     "@iconify-json/lucide": "^1.2.18",
-    "@iconify-json/simple-icons": "^1.2.14",
-    "@types/node": "^22.10.1",
+    "@iconify-json/simple-icons": "^1.2.15",
+    "@types/node": "^22.10.2",
     "changelogen": "^0.5.7",
     "husky": "^9.1.7",
-    "lint-staged": "^15.2.10",
+    "lint-staged": "^15.2.11",
     "typescript": "^5.7.2",
     "vue-tsc": "^2.1.10"
   },
