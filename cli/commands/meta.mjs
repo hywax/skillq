@@ -2,7 +2,8 @@ import { mkdir, writeFile } from 'node:fs/promises'
 import { defineCommand } from 'citty'
 import { consola } from 'consola'
 import { resolve } from 'pathe'
-import { getIconsList, iconsMetaDevDir, iconsMetaProdDir } from '../utils/icons.mjs'
+import { objectChunk } from '../utils/chunk.mjs'
+import { getIconsList, iconsMetaDir } from '../utils/icons.mjs'
 
 export default defineCommand({
   meta: {
@@ -17,92 +18,68 @@ export default defineCommand({
     },
   },
   async setup({ args }) {
-    const icons = await getIconsList()
-    const iconsMap = new Map()
-    const meta = {
-      icons: {},
-      pages: {
-        total: 0,
-        perPage: 100,
-        count: 0,
-        list: [],
-      },
-    }
+    const iconsList = await getIconsList()
+    const iconsMeta = new Map()
 
-    consola.start(`Generating meta for ${icons.length} icons, mode: ${args.prod ? 'production' : 'development'}`)
+    consola.start(`Generating meta for ${iconsList.length} icons, mode: ${args.prod ? 'production' : 'development'}`)
 
     /**
-     * Step 1. Add to icons meta and create icons map
+     * Step 1. Create icon meta map
      */
-    for (const icon of icons) {
-      if (!meta.icons[icon.name]) {
-        meta.icons[icon.name] = {
+    for (const icon of iconsList) {
+      if (!iconsMeta.has(icon.name)) {
+        iconsMeta.set(icon.name, {
           name: icon.name,
           aliases: [],
           filled: false,
           duo: false,
-          page: 0,
-          position: 0,
-        }
-
-        iconsMap.set(icon.name, {})
+          variants: {},
+        })
       }
 
       if (['light', 'dark'].includes(icon.variant)) {
-        meta.icons[icon.name].duo = true
+        iconsMeta.get(icon.name).duo = true
       }
 
       if (icon.variant === 'filled') {
-        meta.icons[icon.name].filled = true
+        iconsMeta.get(icon.name).filled = true
       }
 
-      iconsMap.get(icon.name)[icon.variant] = icon.content
+      iconsMeta.get(icon.name).variants[[icon.variant]] = icon.content
     }
 
     /**
-     * Step 2. Add to pages
+     * Step 2. Normalize meta
      */
-    const parsedIcons = Object.values(meta.icons)
+    const perPage = 70
+    const meta = {
+      pages: Math.ceil(iconsMeta.size / perPage),
+      total: iconsMeta.size,
+      icons: [],
+    }
+    const icons = {}
 
-    meta.pages.total = parsedIcons.length
-    meta.pages.count = Math.ceil(parsedIcons.length / meta.pages.perPage)
+    for (const [name, icon] of iconsMeta.entries()) {
+      meta.icons.push({
+        name,
+        aliases: icon.aliases,
+        filled: icon.filled,
+        duo: icon.duo,
+      })
 
-    for (const [index, icon] of parsedIcons.entries()) {
-      const page = Math.floor(index / meta.pages.perPage)
-
-      if (!meta.pages.list[page]) {
-        meta.pages.list[page] = []
-      }
-
-      icon.page = page
-      icon.position = index % meta.pages.perPage
-      meta.pages.list[page].push(icon.name)
+      icons[name] = icon.variants
     }
 
     /**
-     * Step 3. Generate pages
+     * Step 3. Save meta
      */
-    const pages = []
-    for (const page of meta.pages.list) {
-      const icons = []
-
-      for (const icon of page) {
-        icons.push(iconsMap.get(icon))
-      }
-
-      pages.push(icons)
-    }
-
-    /**
-     * Step 4. Save meta
-     */
-    const iconsMetaDir = args.prod ? iconsMetaProdDir : iconsMetaDevDir
-
     await mkdir(iconsMetaDir, { recursive: true })
     await writeFile(resolve(iconsMetaDir, 'meta.json'), JSON.stringify(meta), 'utf-8')
 
-    for (const [index, page] of pages.entries()) {
-      await writeFile(resolve(iconsMetaDir, `page-${index}.json`), JSON.stringify(page), 'utf-8')
+    // await writeFile(resolve(iconsMetaDir, 'icons.json'), JSON.stringify(icons), 'utf-8')
+    const chunks = objectChunk(icons, perPage)
+    for (const [index, chunk] of chunks.entries()) {
+      await writeFile(resolve(iconsMetaDir, `chunk-${index}.json`), JSON.stringify(chunk), 'utf-8')
     }
 
     consola.success('Done')
