@@ -36,12 +36,12 @@
     "zod": "^3.24.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.6.0",
+    "@commitlint/cli": "^19.6.1",
     "@commitlint/config-conventional": "^19.6.0",
     "@hywax/tools-eslint": "^1.1.0",
-    "@iconify-json/circle-flags": "^1.2.2",
-    "@iconify-json/lucide": "^1.2.18",
-    "@iconify-json/simple-icons": "^1.2.15",
+    "@iconify-json/circle-flags": "^1.2.3",
+    "@iconify-json/lucide": "^1.2.19",
+    "@iconify-json/simple-icons": "^1.2.16",
     "@types/node": "^22.10.2",
     "changelogen": "^0.5.7",
     "husky": "^9.1.7",
