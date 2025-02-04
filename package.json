@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.3.0",
   "private": true,
-  "packageManager": "pnpm@9.15.1",
+  "packageManager": "pnpm@9.15.5",
   "bin": {
     "skillq": "./cli/index.mjs"
   },
@@ -25,28 +25,28 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@nuxt/ui": "^3.0.0-alpha.10",
-    "@nuxt/ui-pro": "^3.0.0-alpha.10",
-    "@nuxtjs/i18n": "9.1.1",
-    "@vueuse/nuxt": "12.2.0",
-    "nuxt": "^3.15.0",
-    "nuxt-zod-i18n": "1.11.2",
-    "octokit": "^4.0.2",
+    "@nuxt/ui": "^3.0.0-alpha.12",
+    "@nuxt/ui-pro": "^3.0.0-alpha.12",
+    "@nuxtjs/i18n": "9.1.5",
+    "@vueuse/nuxt": "12.5.0",
+    "nuxt": "^3.15.4",
+    "nuxt-zod-i18n": "1.11.5",
+    "octokit": "^4.1.0",
     "vue3-marquee": "^4.2.2",
     "zod": "^3.24.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.6.1",
-    "@commitlint/config-conventional": "^19.6.0",
+    "@commitlint/cli": "^19.7.1",
+    "@commitlint/config-conventional": "^19.7.1",
     "@hywax/tools-eslint": "^1.1.0",
-    "@iconify-json/circle-flags": "^1.2.3",
-    "@iconify-json/lucide": "^1.2.20",
-    "@iconify-json/simple-icons": "^1.2.17",
-    "@types/node": "^22.10.2",
+    "@iconify-json/circle-flags": "^1.2.6",
+    "@iconify-json/lucide": "^1.2.25",
+    "@iconify-json/simple-icons": "^1.2.23",
+    "@types/node": "^22.13.1",
     "changelogen": "^0.5.7",
     "husky": "^9.1.7",
-    "lint-staged": "^15.2.11",
-    "typescript": "^5.7.2",
+    "lint-staged": "^15.4.3",
+    "typescript": "^5.7.3",
     "vue-tsc": "^2.2.0"
   },
   "lint-staged": {
