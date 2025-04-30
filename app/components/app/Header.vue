@@ -25,10 +25,6 @@ const links = [
     to: localePath('/builder'),
   },
   {
-    label: $t('app.header.menu.skills'),
-    to: localePath('/skills'),
-  },
-  {
     label: $t('app.header.menu.sponsor'),
     to: localePath('/sponsor'),
   },

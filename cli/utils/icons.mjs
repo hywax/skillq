@@ -2,8 +2,7 @@ import { readFile } from 'node:fs/promises'
 import { globby } from 'globby'
 import { basename, resolve } from 'pathe'
 
-export const iconsMetaProdDir = resolve(import.meta.dirname, '../../.output/meta')
-export const iconsMetaDevDir = resolve(import.meta.dirname, '../../meta')
+export const iconsMetaDir = resolve(import.meta.dirname, '../../public/icons')
 export const iconsDir = resolve(import.meta.dirname, '../../icons')
 
 export async function getIconsList() {
