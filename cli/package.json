@@ -6,8 +6,8 @@
   },
   "dependencies": {
     "citty": "^0.1.6",
-    "consola": "^3.3.3",
-    "globby": "^14.0.2",
+    "consola": "^3.4.2",
+    "globby": "^14.1.0",
     "pathe": "^1.1.2",
     "svgo": "^3.3.2"
   }
